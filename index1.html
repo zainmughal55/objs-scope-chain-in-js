@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Work</title>
+	<script type="text/javascript">
+	
+
+	//Example function context and variable envoirnment
+	function b()
+	{
+		var m=3;
+		console.log("Function Context and Variable Envoirnment = "+m);
+	}
+	function a()
+	{
+		var m=2;
+		b();
+	}
+	var m=1;
+	a();
+
+
+	//Example 1 Scope Chain
+	function d()
+	{
+		console.log("Example 1 Scope Chain = "+n);
+	}
+	function c()
+	{
+		var n=2;
+		d();
+	}
+	var n=1;
+	c();
+
+	//Example 2 Scope Chain
+	function e()
+	{
+		function f()
+		{	
+			console.log("Example 2 Scope Chain = "+o);
+		}
+		var o=2;
+		f();
+	}
+	var o=1;
+	e();
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
